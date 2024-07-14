@@ -82,11 +82,11 @@ function Masterclass() {
         />
         <meta
           property="og:url"
-          content="https://annelesin.com.br/techpath/masterclass/"
+          content="https://techanne.com.br/techpath/masterclass/"
         />
         <meta
           property="og:image"
-          content="https://annelesin.com.br/images/share-techpath.jpg"
+          content="https://techanne.com.br/images/share-techanne.jpg"
         />
       </Head>
       <PageCadastro>

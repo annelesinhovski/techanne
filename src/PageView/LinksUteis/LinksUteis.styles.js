@@ -41,7 +41,8 @@ export const Header = styled.header`
     color: ${({ theme }) => theme.blue};
     text-align: center;
     font-size: 22px;
-    margin: 30px 0 50px;
+    margin: 30px auto 50px;
+    max-width: 190px;
     &:after {
       content: '';
       display: block;
@@ -51,8 +52,8 @@ export const Header = styled.header`
       background-size: 100%;
       position: absolute;
       z-index: 9999;
-      right: 25px;
-      top: 10px;
+      right: -25px;
+      top: 25px;
       transform: rotate(10deg);
     }
   }
@@ -82,6 +83,15 @@ export const ListaLinks = styled.ul`
       color: ${({ theme }) => theme.pink};
       text-transform: uppercase;
     }
+
+    .sobre {
+      font-size: 14px;
+      color: ${({ theme }) => theme.blue};
+      margin: 15px 0 40px;
+      strong {
+        font-family: 'Uxum';
+      }
+    }
   }
 `;
 
@@ -92,6 +102,7 @@ export const LinkItem = styled.a`
   list-style: none;
   display: block;
   padding: 10px;
+  margin: 5px 0;
   border-radius: 15px;
   border: 3px solid ${({ theme }) => theme.yellow};
   color: ${({ theme }) => theme.blue};
@@ -116,4 +127,23 @@ export const LinkItemSecundario = styled.a`
   color: ${({ theme }) => theme.blue};
   text-align: left;
   text-decoration: none;
+`;
+
+export const LabelPink = styled.span`
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 3px 5px;
+  margin: 0 2px;
+  background: ${({ theme }) => theme.pink};
+  color: ${({ theme }) => theme.white};
+  border-radius: 2px;
+`;
+
+export const LabelBlue = styled.span`
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 3px 5px;
+  background: ${({ theme }) => theme.blue};
+  color: ${({ theme }) => theme.white};
+  border-radius: 2px;
 `;

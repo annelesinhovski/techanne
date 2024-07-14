@@ -31,6 +31,10 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
+          <meta
+            name="facebook-domain-verification"
+            content="q4f0guhb2hu517c7l4bvr81ihvozv7"
+          />
           <script
             dangerouslySetInnerHTML={{
               __html: `!function(f,b,e,v,n,t,s)
@@ -41,7 +45,7 @@ export default class MyDocument extends Document {
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '731098272350523');
+          fbq('init', '454127762865345');
           fbq('track', 'PageView');`,
             }}
           />
@@ -52,7 +56,7 @@ export default class MyDocument extends Document {
               height="1"
               width="1"
               style="display:none"
-              src="https://www.facebook.com/tr?id=731098272350523&ev=PageView&noscript=1" `,
+              src="https://www.facebook.com/tr?id=454127762865345&ev=PageView&noscript=1" `,
             }}
           />
           <script

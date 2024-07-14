@@ -53,7 +53,7 @@ function ListaEspera() {
         />
         <meta
           property="og:image"
-          content="https://techanne.com.br/images/share-techpath.jpg"
+          content="https://techanne.com.br/images/share-techanne.jpg"
         />
       </Head>
       <PageLista>
@@ -76,7 +76,7 @@ function ListaEspera() {
               </h2>
 
               <h3>
-                <strong>Previsão de próxima turma:</strong> 2023
+                <strong>Próxima turma:</strong> Fevereiro/2024
               </h3>
 
               <p>
@@ -89,7 +89,7 @@ function ListaEspera() {
                     onSubmit={() => {
                       setIsSubmitting(true);
                     }}
-                    action="https://annelesin.us5.list-manage.com/subscribe/post?u=3c3129431c3be45e7e6a22909&amp;id=350c42b051"
+                    action="https://annelesin.us5.list-manage.com/subscribe/post?u=3c3129431c3be45e7e6a22909&amp;id=350c42b051&amp;f_id=00281eeaf0"
                     method="post"
                     id="mc-embedded-subscribe-form"
                     name="mc-embedded-subscribe-form"
@@ -140,7 +140,7 @@ function ListaEspera() {
             src="/images/logo-tech-path-horizontal-amarela.svg"
             alt="Logo Tech Path"
           />
-          <p>Copyright © Tech Path 2023</p>
+          <p>Copyright © Tech Path 2024</p>
 
           <p>
             Dúvidas e suporte: <br />

@@ -1,16 +1,25 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
-import Container from '../../components/Container/Container';
 
 import {
-  HeaderLista,
-  PageLista,
-  ListadeEspera,
-  FotoDestaque,
-  Footer,
-} from '../../PageView/TechPath/TechPath.styles';
+  PageConfirmacao,
+  HeaderGPS,
+  HeroGPS,
+  Confirmacao,
+  Wrapper,
+  ButtonPink,
+  Evento,
+} from '../CadastroConfirmado/CadastroConfirmado.styles';
 
 function CadastroConfirmado() {
+  const router = useRouter();
+
+  const linkWhats = (e) => {
+    e.preventDefault();
+    router.push('https://chat.whatsapp.com/By16XrJwPAQ8jqcqojCIjS');
+  };
+
   return (
     <>
       <Head>
@@ -31,53 +40,65 @@ function CadastroConfirmado() {
         />
         <meta
           property="og:image"
-          content="https://techanne.com.br/images/share-techpath.jpg"
+          content="https://techanne.com.br/images/share-techanne.jpg"
         />
       </Head>
-      <PageLista>
-        <Container>
-          <ListadeEspera>
-            <FotoDestaque>
-              <img
-                src="/images/techpath/anne.jpg"
-                alt="Foto de Anne sentada atrás de uma mesa, sorrindo e olhando para a tela. Na imagem também é possível ver um computador e um microfone sob uma mesa."
-              />
-            </FotoDestaque>
-            <aside>
-              <HeaderLista>
-                <h1>Tech Path</h1>
-              </HeaderLista>
+      <PageConfirmacao>
+        <HeaderGPS>
+          <Wrapper>
+            <h1>Tech Path</h1>
+          </Wrapper>
+        </HeaderGPS>
 
-              <h3>
-                Opa, que legal! <br />
-                Muito obrigada pela sua inscrição. :)
-              </h3>
+        <HeroGPS>
+          <Wrapper>
+            <Confirmacao>
+              <figure>
+                <img
+                  src="/images/lista.png"
+                  alt="Imagem ilustrativa com Tech Anne segurando um celular. É possível ver os selos da marca escritos: I love TI, Fala galera e Evoluir Carreira."
+                />
+                <figcaption>
+                  <h2>Inscrição confirmada!</h2>
 
-              <p>
-                Agora você faz parte da minha lista e te mandarei as novidades
-                sempre em primeira mão por e-mail.
-              </p>
+                  <p>
+                    Agora você faz parte da minha lista de e-mail.
+                    <br />
+                    Te mandarei as novidades sempre em primeira mão. E fica
+                    tranquilo(a), não vou te encher de spam. :)
+                  </p>
 
-              <p>Fique de olho :)</p>
-
-              <p>PS: Não se preocupe, não vou te encher de spam.</p>
-              <p>
-                Abraço,
-                <br /> Anne.
-              </p>
-            </aside>
-          </ListadeEspera>
-        </Container>
-        <Footer>
-          <img src="/images/logo-techpath-yellow.svg" alt="Logo Tech Path" />
-          <p>Copyright © Tech Path 2023</p>
-
-          <p>
-            Dúvidas e suporte: <br />
-            contato@techanne.com.br
-          </p>
-        </Footer>
-      </PageLista>
+                  <p>Não deixe de entrar no Grupo VIP do WhatsApp abaixo 👇</p>
+                </figcaption>
+              </figure>
+            </Confirmacao>
+            <Evento>
+              <figure>
+                <img
+                  src="/images/grupo-whats.png"
+                  alt="Aulao LinkedIn para Devs"
+                />
+                <figcaption>
+                  <p>
+                    <strong>Entre no Grupo VIP do WhatsApp!</strong>
+                    <br />
+                    <br /> Assim você não perde nenhuma das comunicações - e não
+                    se preocupe, só admins vão enviar mensagens e apenas o
+                    necessário nesse grupo. <br />
+                    <br />
+                    E quem sabe você não vem ser meu aluno com condições
+                    incríveis? 💻⚡
+                    <br />
+                    <br />
+                    Te vejo lá? 👇
+                  </p>
+                  <ButtonPink onClick={linkWhats}>Acessar grupo vip</ButtonPink>
+                </figcaption>
+              </figure>
+            </Evento>
+          </Wrapper>
+        </HeroGPS>
+      </PageConfirmacao>
     </>
   );
 }

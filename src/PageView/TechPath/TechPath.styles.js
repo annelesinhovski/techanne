@@ -3,25 +3,23 @@ import styled from 'styled-components';
 export const PageCadastro = styled.div`
   background-color: ${({ theme }) => theme.white};
   min-height: 100vh;
-
-  &:before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 948px;
-    height: 1068px;
-    background: url(/images/bg-organic.svg) no-repeat -480px -100px;
-    z-index: 1;
-
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
-  }
 `;
 
 export const PageConfirmacao = styled.div`
   background-color: ${({ theme }) => theme.white};
   min-height: 100vh;
+`;
+
+export const PageGPS = styled.div`
+  background-color: ${({ theme }) => theme.white};
+  min-height: 100vh;
+`;
+
+export const Wrapper = styled.div`
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: block;
 `;
 
 export const Slogan = styled.p`
@@ -90,6 +88,34 @@ export const Header = styled.header`
   }
 `;
 
+export const HeaderGPS = styled.header`
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 30px;
+  background: url(/images/bg/blue.jpg) repeat;
+
+  h1 {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 65px;
+    background: url(/images/gps/logo-principal.png) no-repeat;
+    background-size: 100%;
+    font-size: 0;
+
+    @media screen and (min-width: 360px) {
+      width: 300px;
+      height: 75px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 400px;
+      height: 100px;
+    }
+  }
+`;
+
 export const HeadingH2 = styled.h2`
   display: flex;
   flex-direction: column;
@@ -98,8 +124,6 @@ export const HeadingH2 = styled.h2`
   margin: 0;
   line-height: 100%;
   color: ${({ theme }) => theme.blue};
-
-  background: ;
 
   @media screen and (min-width: 768px) {
     font-size: 44px;
@@ -120,6 +144,20 @@ export const HeadingH2 = styled.h2`
     @media screen and (min-width: 768px) {
       font-size: 24px;
     }
+  }
+`;
+
+export const HeadingH3 = styled.h3`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  margin: 25px 0 0;
+  line-height: 100%;
+  color: ${({ theme }) => theme.pink};
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
   }
 `;
 
@@ -186,6 +224,8 @@ export const Data = styled.div`
 export const Ementa = styled.section`
   position: relative;
   z-index: 3;
+  margin: 50px 0;
+
   h2 {
     margin: 30px auto 50px;
   }
@@ -341,6 +381,16 @@ export const Hero = styled.section`
   }
 `;
 
+export const HeroGPS = styled.section`
+  position: relative;
+  z-index: 1;
+  background: url(/images/bg/blue.jpg) repeat;
+
+  .flex {
+    display: flex;
+  }
+`;
+
 export const Headline = styled.div`
   position: relative;
   text-align: center;
@@ -348,10 +398,10 @@ export const Headline = styled.div`
   margin: 0 auto 50px;
 
   h2 {
-    max-width: 250px;
+    max-width: 280px;
     margin: 0 auto;
     span {
-      max-width: 250px;
+      max-width: 280px;
       line-height: 100%;
     }
   }
@@ -381,15 +431,6 @@ export const Headline = styled.div`
       strong {
         display: inline;
       }
-    }
-  }
-
-  button {
-    background: #b9040c;
-    color: ${({ theme }) => theme.white};
-    border: 2px solid #b9040c;
-    &:hover {
-      border: 2px solid ${({ theme }) => theme.yellow};
     }
   }
 `;
@@ -599,10 +640,14 @@ export const Carousel = styled.div`
 
 export const Price = styled.section`
   position: relative;
-  padding: 100px 0;
+  padding: 100px 0 30px;
   background: ${({ theme }) => theme.blue};
   color: ${({ theme }) => theme.white};
   margin: 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0 50px;
+  }
 
   &:after {
     position: absolute;
@@ -633,7 +678,7 @@ export const Price = styled.section`
 `;
 
 export const PriceDescription = styled.div`
-  max-width: 680px;
+  max-width: 1080px;
   margin: 50px auto;
   justify-content: space-between;
   display: flex;
@@ -645,7 +690,13 @@ export const PriceDescription = styled.div`
 `;
 
 export const Valor = styled.div`
-  margin: 0 auto 30px;
+  margin: 0 auto 50px;
+
+  .bonus {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
 
   p {
     color: ${({ theme }) => theme.lightBlue};
@@ -959,4 +1010,135 @@ export const Formulario = styled.div`
       }
     }
   }
+`;
+
+export const ButtonYellow = styled.button`
+  width: 270px;
+  height: 60px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Uxum';
+  cursor: pointer;
+  background: ${({ theme }) => theme.yellow};
+  color: ${({ theme }) => theme.blue};
+  border: 2px solid ${({ theme }) => theme.yellow};
+  transition: background 0.3s linear, border 0.3s linear;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+  border-bottom: 4px solid ${({ theme }) => theme.yellow};
+
+  &:hover {
+    box-shadow: 0 0 rgba(0, 0, 0, 0.4);
+    border-bottom-width: 2px;
+    transform: translateY(2px);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 320px;
+    font-size: 24px;
+  }
+`;
+
+export const ButtonPink = styled.button`
+  width: 270px;
+  height: 60px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Uxum';
+  cursor: pointer;
+  background: ${({ theme }) => theme.pink};
+  color: ${({ theme }) => theme.blue};
+  border: 2px solid ${({ theme }) => theme.pink};
+  transition: background 0.3s linear, border 0.3s linear;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+  border-bottom: 4px solid ${({ theme }) => theme.pink};
+
+  &:hover {
+    box-shadow: 0 0 rgba(0, 0, 0, 0.4);
+    border-bottom-width: 2px;
+    transform: translateY(2px);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 320px;
+    font-size: 24px;
+  }
+`;
+
+export const BulletPoints = styled.div`
+  position: relative;
+  z-index: 1;
+  margin: 0 auto 50px;
+  padding: 30px 0 30px;
+  background: url(/images/bg/yellow.jpg) repeat;
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 0;
+    font-size: 21px;
+  }
+
+  h3 {
+    margin: 30px 0 30px;
+  }
+
+  p {
+    font-size: 21px;
+    color: ${({ theme }) => theme.blue};
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+
+    strong {
+      font-family: 'Uxum';
+    }
+  }
+
+  ul {
+    margin: 0 0 50px 0;
+    padding: 0;
+    li {
+      list-style: none;
+      position: relative;
+      padding: 0 0 0 30px;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 0;
+        top: 3px;
+        background: url('/images/icones/ico-seta.svg') no-repeat;
+        background-size: 100%;
+      }
+      p {
+        a,
+        span {
+          color: ${({ theme }) => theme.pink};
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  button {
+    margin: 0 auto -50px;
+    display: block;
+  }
+`;
+
+export const HeroMentoria = styled.section`
+  position: relative;
+  z-index: 2;
+  background: url(/images/bg/white.jpg) repeat;
+  padding: 0 0 30px;
 `;

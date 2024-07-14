@@ -26,28 +26,25 @@ function Cadastro() {
   return (
     <>
       <Head>
-        <title>Newsletter | @tech.anne</title>
+        <title>Lista VIP | @tech.anne</title>
         <meta
           name="description"
           key="description"
-          content="Tech Path - Tudo o que você precisa para ter uma carreira de sucesso em tech"
+          content="Tech Anne - Lista VIP e conteúdo exclusivo para cadastrados!"
         />
         <meta
           property="og:title"
-          content="Tech Path - Entre na lista de espera!"
+          content="Tech Anne - Lista VIP e conteúdo exclusivo para cadastrados!"
         />
         <meta
           property="og:description"
-          content="Tech Path - Tudo o que você precisa para ter uma carreira de sucesso em tech"
+          content="Tech Anne - Lista VIP e conteúdo exclusivo para cadastrados!"
         />
-        <meta
-          property="og:url"
-          content="https://techanne.com.br/techpath/mentoria/"
-        />
+        <meta property="og:url" content="https://techanne.com.br/lista-vip/" />
         <meta
           property="og:image"
           key="og:image"
-          content="https://annelesin.com.br/images/foto-perfil.png"
+          content="https://techanne.com.br/images/share-techanne.jpg"
         />
       </Head>
       <PageCadastro>

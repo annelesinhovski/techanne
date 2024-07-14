@@ -111,7 +111,7 @@ function Masterclass() {
         />
         <meta
           property="og:url"
-          content="https://annelesin.com.br/techpath/mentoria/"
+          content="https://techanne.com.br/techpath/mentoria/"
         />
         <meta
           property="og:image"
@@ -578,7 +578,7 @@ function Masterclass() {
         </Price>
         <Footer>
           <img src="/images/logo-techpath.svg" alt="Logo Tech Path" />
-          <p>Copyright © Tech Path 2023</p>
+          <p>Copyright © Tech Path 2024</p>
 
           <p>
             Dúvidas e suporte: <br />

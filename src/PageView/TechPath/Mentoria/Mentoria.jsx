@@ -96,7 +96,7 @@ const listaTopicos = [
   },
 ];
 
-function Masterclass() {
+function Mentoria() {
   const router = useRouter();
 
   const listaEsperaPage = (e) => {
@@ -125,21 +125,21 @@ function Masterclass() {
         />
         <meta
           property="og:url"
-          content="https://annelesin.com.br/techpath/mentoria/"
+          content="https://techanne.com.br/techpath/mentoria/"
         />
         <meta
           property="og:image"
-          content="https://annelesin.com.br/images/share-techpath.jpg"
+          content="https://techanne.com.br/images/share-techanne.jpg"
         />
       </Head>
       <PageCadastro>
         <Header>
-          <span>Mentoria</span>
+          <span>MENTORIA</span>
           <h1>Tech Path</h1>
         </Header>
         <Container>
           <Hero>
-            <Video>
+            {/* <Video>
               <iframe
                 width="580"
                 height="300"
@@ -149,13 +149,13 @@ function Masterclass() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-            </Video>
+            </Video> */}
             <Headline>
               <HeadingH2>
                 Comece seu caminho para<span>uma carreira tech de sucesso</span>
               </HeadingH2>
               <p>
-                <strong>Um programa de mentoria</strong> de 8 semanas para você
+                <strong>Um programa de mentoria</strong> de 6 meses para você
                 destravar sua carreira como dev.
                 <br />
               </p>
@@ -526,14 +526,14 @@ function Masterclass() {
                   Por
                 </p>
                 <h5>
-                  <span>R$</span>699<small>,00</small>
+                  <span>R$</span>997<small>,00</small>
                 </h5>
               </Valor>
               <Pacote>
                 <h6>benefícios exclusivos</h6>
                 <ul>
                   <li>
-                    <p>8 semanas de mentoria</p>
+                    <p>6 meses de acompanhamento</p>
                   </li>
                   <li>
                     <p>Aulas gravadas e encontros ao vivo</p>{' '}
@@ -541,6 +541,9 @@ function Masterclass() {
                       (Os encontros ao vivo serão em grupo e serão gravados para
                       você assistir quando puder).
                     </small>
+                  </li>
+                  <li>
+                    <p>Ganhe o curso GPS!</p>
                   </li>
                   <li>
                     <p>Comunidade exclusiva no Discord</p>
@@ -555,7 +558,7 @@ function Masterclass() {
                     <p>Acesso de 1 ano</p>
                   </li>
                   <li>
-                    <p>Pagamento seguro e suporte Hotmart</p>
+                    <p>Pagamento seguro e suporte </p>
                   </li>
                   <li>
                     <p>Garantia de 7 dias</p>
@@ -573,7 +576,7 @@ function Masterclass() {
             src="/images/logo-tech-path-horizontal-amarela.svg"
             alt="Logo Tech Path"
           />
-          <p>Copyright © Tech Path 2023</p>
+          <p>Copyright © Tech Path 2024</p>
 
           <p>
             Dúvidas e suporte: <br />
@@ -585,4 +588,4 @@ function Masterclass() {
   );
 }
 
-export default Masterclass;
+export default Mentoria;
