@@ -114,11 +114,22 @@ export const Confirmacao = styled.div`
   text-align: center;
   z-index: 1;
   margin: 0 auto 50px;
+  padding: 20px;
 
   h2 {
     margin: 20px auto;
-    color: ${({ theme }) => theme.yellow};
+    color: ${({ theme }) => theme.white};
     font-size: 24px;
+    span {
+      max-width: 250px;
+      line-height: 100%;
+    }
+  }
+
+  h3 {
+    margin: 40px auto 20px;
+    color: ${({ theme }) => theme.yellow};
+    font-size: 21px;
     span {
       max-width: 250px;
       line-height: 100%;
@@ -135,18 +146,19 @@ export const Confirmacao = styled.div`
     margin: 0;
     @media screen and (min-width: 768px) {
       display: flex;
+      align-items: center;
       figcaption {
         padding: 60px 0 0;
       }
       img {
-        max-width: 300px;
+        max-width: 450px;
         width: 100%;
       }
     }
 
     @media screen and (max-width: 768px) {
       img {
-        max-width: 200px;
+        max-width: 250px;
         width: 100%;
       }
     }

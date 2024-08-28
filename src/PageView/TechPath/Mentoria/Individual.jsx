@@ -157,19 +157,23 @@ function Individual() {
           <Headline>
             <Wrapper>
               <HeadingH2>
-                <span>Acompanhamento individual</span> para carreiras únicas.
+                <span>Transforme sua carreira em T.I.</span>
               </HeadingH2>
 
               <HeadingH3>
-                De acordo com as suas necessidades e o seu momento.
+                Torne-se um profissional altamente requisitado, com habilidades
+                que permitem você{' '}
+                <em className="yellow">escolher onde e como trabalhar,</em>{' '}
+                maximizando suas oportunidades e ganhos no mercado de
+                tecnologia.
               </HeadingH3>
+
+              <ButtonPink onClick={scrollToOffer}>Agende sua sessão</ButtonPink>
 
               <p>
                 Para quem busca uma primeira ou nova oportunidade (troca de
                 emprego), recolocação e transição de carreira.
               </p>
-
-              <ButtonPink onClick={scrollToOffer}>Agende sua sessão</ButtonPink>
             </Wrapper>
           </Headline>
         </HeroMentoria>
@@ -186,9 +190,8 @@ function Individual() {
                   Decida entre fazer apenas uma&nbsp;
                   <span onClick={scrollToOffer}>sessão individual</span> ou
                   adquirir um{' '}
-                  <span onClick={scrollToOffer}>pacote de 3 ou 6 meses</span>
-                  &nbsp;de acompanhamento (no pacote você tem desconto nas
-                  sessões e bônus!).
+                  <span onClick={scrollToOffer}>pacote de 6 meses</span>
+                  &nbsp;de acompanhamento (no pacote você recebe muitos bônus!).
                 </p>
               </li>
               <li>
@@ -516,31 +519,31 @@ function Individual() {
               <Valor>
                 <p>Sessão única</p>
                 <h5>
-                  <span>R$ &nbsp;</span> 169<small>,00</small>
+                  <span>R$ &nbsp;</span> 297<small>,00</small>
                 </h5>
                 <ButtonPink onClick={sessaoUnica}>Garanta sua vaga</ButtonPink>
-              </Valor>
-              <Valor>
-                <p>Pacote 3 sessões</p>
-                <h5>
-                  <span>R$</span>399<small>,00</small>
-                </h5>
-                <ButtonPink onClick={sessaoPacote}>Garanta sua vaga</ButtonPink>
-                <small className="bonus">
-                  Ganhe planner + template de PDI no Notion
-                </small>
+                <ul className="bonus">
+                  <li>Sessão individual de 1h de duração</li>
+                  <li>Receba um plano de ação personalizado</li>
+                  <li>30 dias de suporte</li>
+                </ul>
               </Valor>
               <Valor>
                 <p>Pacote 6 sessões</p>
                 <h5>
-                  <span>R$</span>797<small>,00</small>
+                  <span>R$</span>1.397<small>,00</small>
                 </h5>
+
                 <ButtonPink onClick={sessaoPacoteSemestral}>
                   Garanta sua vaga
                 </ButtonPink>
-                <small className="bonus">
-                  Ganhe acesso a todos os meus cursos!
-                </small>
+
+                <ul className="bonus">
+                  <li>6 meses de acompanhamento</li>
+                  <li>Ecossistema completo no Notion</li>
+                  <li>Comunidade de networking no WhatsApp</li>
+                  <li>Acesso a todos os meus treinamentos!</li>
+                </ul>
               </Valor>
             </PriceDescription>
           </Container>

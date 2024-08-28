@@ -361,15 +361,16 @@ function VagaTechPage() {
               <li>
                 <h4>Bônus #03</h4>
                 <figure>
-                  <img src="/images/gps/bonus/comunidade.jpg" />
+                  <img src="/images/gps/bonus/guia-ia.jpg" />
                   <figcaption>
                     <p>
-                      <strong>Comunidade Tech Path</strong> - Comunidade no
-                      Discord para você aumentar seu networking e trocar
-                      experiências com outros alunos.
+                      <strong>Guia Use I.A. ao seu favor</strong> - Guia
+                      completo sobre como usar o ChatGPT para atualizar as
+                      informações do seu LinkedIn e currículo de forma
+                      estratégica.
                     </p>
                     <p>
-                      Valor: <s>R$ 49,00/mês</s> &rarr;{' '}
+                      Valor: <s>R$ 49,00</s> &rarr;{' '}
                       <span className="price">Nessa oferta: Grátis!</span>
                     </p>
                   </figcaption>
@@ -378,17 +379,16 @@ function VagaTechPage() {
               <li>
                 <h4>Bônus #04</h4>
                 <figure>
-                  <img src="/images/gps/bonus/vagas-semana.jpg" />
+                  <img src="/images/gps/bonus/aulas-trabalho-ti.jpg" />
                   <figcaption>
                     <p>
-                      <strong>Vagas da semana</strong> - Curadoria semanal com
-                      lista de vagas selecionadas para você acessar e aplicar.
+                      <strong>Trabalhando com T.I.</strong> - 4 aulas para te
+                      orientar: áreas de atuação, conhecendo o mercado, roadmaps
+                      e como estudar.
                     </p>
                     <p>
-                      Valor: <s>R$ 29,00/mês</s> &rarr;{' '}
+                      Valor: <s>R$ 97,00</s> &rarr;{' '}
                       <span className="price">Nessa oferta: Grátis!</span>
-                      <br />
-                      <br />
                     </p>
                   </figcaption>
                 </figure>
@@ -429,24 +429,24 @@ function VagaTechPage() {
 
                 <li>
                   <p>
-                    Bônus #03 - Comunidade Tech Path{' '}
+                    Bônus #03 - Guia Use IA ao seu favor{' '}
                     <span>
-                      → <s>R$ 49/mês</s>
+                      → <s>R$ 49</s>
                     </span>
                   </p>
                 </li>
                 <li>
                   <p>
-                    Bônus #04 - Vagas da semana{' '}
+                    Bônus #04 - Aulas extras | Trabalhando com T.I.{' '}
                     <span>
-                      → <s>R$ 29/mês</s>
+                      → <s>R$ 97</s>
                     </span>
                   </p>
                 </li>
               </ul>
 
               <h4>
-                Tudo isso deveria custar mais de R$370!
+                Tudo isso deveria custar mais de R$440!
                 <span>
                   Mas hoje você não vai precisar investir nem metade disso.
                 </span>
@@ -460,21 +460,13 @@ function VagaTechPage() {
                 por apenas:{' '}
               </h5>
             </Pacote>
-            {/* <PriceDescription>
+            <PriceDescription>
               <Valor>
                 <p>12x</p>
                 <h5>
                   <span>R$</span>9<small>,74</small>
                 </h5>
                 <p className="total">ou 97,00 à vista</p>
-              </Valor>
-            </PriceDescription> */}
-            <PriceDescription>
-              <Valor>
-                <h5>
-                  <span>R$</span>49<small>,90</small>
-                </h5>
-                <p className="total">OFERTA DE LANÇAMENTO</p>
               </Valor>
             </PriceDescription>
           </Wrapper>

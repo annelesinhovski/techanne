@@ -34,6 +34,23 @@ function LinksUteis() {
           </Header>
           <ListaLinks>
             <li>
+              <LinkItem href="/techpath/mentoria/individual" target="_blank">
+                Mentoria Tech Path{' '}
+                <small>Vagas limitadas | Agende hoje mesmo!</small>
+              </LinkItem>
+              <LabelPink>AO VIVO</LabelPink>
+              <LabelBlue>Sessão única ou pacote</LabelBlue>
+              <p className="sobre">
+                <strong>
+                  Acompanhamento individual para carreiras únicas.
+                </strong>{' '}
+                De acordo com as suas necessidades e o seu momento. Para quem
+                busca uma primeira ou nova oportunidade (troca de emprego),
+                recolocação e transição de carreira.
+              </p>
+            </li>
+
+            <li>
               <LinkItem href="/techpath/gps" target="_blank">
                 GPS
                 <small>Guia de Processos Seletivos</small>
@@ -50,6 +67,7 @@ function LinksUteis() {
                 e aulas direto ao ponto.
               </p>
             </li>
+
             <li>
               <LinkItem href="/techpath/perfil-atrativo-devs/" target="_blank">
                 PAD
@@ -64,6 +82,26 @@ function LinksUteis() {
                 conquistar vagas para trabalhar com programação.
               </p>
             </li>
+
+            <li>
+              <LinkItem
+                href="https://pay.kiwify.com.br/3GrsCX8"
+                target="_blank"
+              >
+                Análise de LinkedIn{' '}
+                <small>Seja notado e conquiste sua vaga tech</small>
+              </LinkItem>
+
+              <LabelBlue>DOSSIÊ COMPLETO</LabelBlue>
+              <LabelPink>FORMATO PDF</LabelPink>
+              <p className="sobre">
+                <strong>Vou revisar seu perfil de forma personalizada,</strong>{' '}
+                de acordo com seu objetivo profissional na área de T.I. Você
+                receberá um dossiê completo com todos os pontos de melhoria para
+                que seu perfil seja mais notado no LinkedIn.
+              </p>
+            </li>
+
             <li>
               <LinkItem href="/techpath/ebook-vaga-tech/" target="_blank">
                 E-book | Vaga Tech
@@ -81,22 +119,6 @@ function LinksUteis() {
               </p>
             </li>
 
-            <li>
-              <LinkItem href="/techpath/mentoria/individual" target="_blank">
-                Mentoria Tech Path{' '}
-                <small>Vagas limitadas | Agende hoje mesmo!</small>
-              </LinkItem>
-              <LabelPink>AO VIVO</LabelPink>
-              <LabelBlue>Sessão única ou pacote</LabelBlue>
-              <p className="sobre">
-                <strong>
-                  Acompanhamento individual para carreiras únicas.
-                </strong>{' '}
-                De acordo com as suas necessidades e o seu momento. Para quem
-                busca uma primeira ou nova oportunidade (troca de emprego),
-                recolocação e transição de carreira.
-              </p>
-            </li>
             {/* <li>
               <LinkItem href="/techpath/mentoria/" target="_blank">
                 Mentoria Tech Path <small>Lista de espera</small>

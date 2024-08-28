@@ -17,7 +17,7 @@ function CadastroConfirmado() {
 
   const linkWhats = (e) => {
     e.preventDefault();
-    router.push('https://chat.whatsapp.com/By16XrJwPAQ8jqcqojCIjS');
+    router.push('https://chat.whatsapp.com/IxnDW6CpM0l1i7k7KS7V7D');
   };
 
   return (
@@ -27,12 +27,12 @@ function CadastroConfirmado() {
         <meta
           name="description"
           key="description"
-          content="Tech Path - Tudo o que você precisa para ter uma carreira de sucesso em tech"
+          content="Tech Anne - Tudo o que você precisa para ter uma carreira de sucesso em tech"
         />
-        <meta property="og:title" content="Tech Path - Cadastro confirmado!" />
+        <meta property="og:title" content="Tech Anne - Cadastro confirmado!" />
         <meta
           property="og:description"
-          content="Tech Path - Tudo o que você precisa para ter uma carreira de sucesso em tech"
+          content="Tech Anne - Tudo o que você precisa para ter uma carreira de sucesso em tech"
         />
         <meta
           property="og:url"
@@ -44,12 +44,6 @@ function CadastroConfirmado() {
         />
       </Head>
       <PageConfirmacao>
-        <HeaderGPS>
-          <Wrapper>
-            <h1>Tech Path</h1>
-          </Wrapper>
-        </HeaderGPS>
-
         <HeroGPS>
           <Wrapper>
             <Confirmacao>
@@ -59,43 +53,28 @@ function CadastroConfirmado() {
                   alt="Imagem ilustrativa com Tech Anne segurando um celular. É possível ver os selos da marca escritos: I love TI, Fala galera e Evoluir Carreira."
                 />
                 <figcaption>
-                  <h2>Inscrição confirmada!</h2>
+                  <h2>Quase lá...</h2>
 
                   <p>
-                    Agora você faz parte da minha lista de e-mail.
-                    <br />
-                    Te mandarei as novidades sempre em primeira mão. E fica
-                    tranquilo(a), não vou te encher de spam. :)
+                    Agora você faz parte da minha lista de e-mail, e não se
+                    preocupe pois não vou te encher de SPAM{' '}
+                    <em>(sim, também acho chato!)</em>.
                   </p>
 
-                  <p>Não deixe de entrar no Grupo VIP do WhatsApp abaixo 👇</p>
+                  <h3>Para concluir seu cadastro como Tech Anner VIP:</h3>
+
+                  <p>
+                    Entre no link abaixo na comunidade do WhatApp para
+                    comunicados, avisos de lives, e muitas oportunidades para
+                    sua carreira tech. 👇
+                  </p>
+
+                  <ButtonPink onClick={linkWhats}>
+                    Concluir inscrição
+                  </ButtonPink>
                 </figcaption>
               </figure>
             </Confirmacao>
-            <Evento>
-              <figure>
-                <img
-                  src="/images/grupo-whats.png"
-                  alt="Aulao LinkedIn para Devs"
-                />
-                <figcaption>
-                  <p>
-                    <strong>Entre no Grupo VIP do WhatsApp!</strong>
-                    <br />
-                    <br /> Assim você não perde nenhuma das comunicações - e não
-                    se preocupe, só admins vão enviar mensagens e apenas o
-                    necessário nesse grupo. <br />
-                    <br />
-                    E quem sabe você não vem ser meu aluno com condições
-                    incríveis? 💻⚡
-                    <br />
-                    <br />
-                    Te vejo lá? 👇
-                  </p>
-                  <ButtonPink onClick={linkWhats}>Acessar grupo vip</ButtonPink>
-                </figcaption>
-              </figure>
-            </Evento>
           </Wrapper>
         </HeroGPS>
       </PageConfirmacao>

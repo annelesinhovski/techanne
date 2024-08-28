@@ -931,7 +931,7 @@ function GPSPage() {
               <PriceDescriptionVIP>
                 <ValorVIP>
                   <p>De R$ 1297 por….</p>
-                  <h5>12x R$ 49,90</h5>
+                  <h5>12x R$ 39,86</h5>
                   <p className="total">Oferta por tempo limitado &darr;</p>
                   <ButtonYellow onClick={carrinho}>
                     Garanta sua vaga

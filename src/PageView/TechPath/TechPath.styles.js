@@ -120,7 +120,7 @@ export const HeadingH2 = styled.h2`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
   line-height: 100%;
   color: ${({ theme }) => theme.blue};
@@ -151,13 +151,17 @@ export const HeadingH3 = styled.h3`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 24px;
-  margin: 25px 0 0;
+  font-size: 22px;
+  margin: 25px 0;
   line-height: 100%;
   color: ${({ theme }) => theme.pink};
 
+  em {
+    text-decoration: underline;
+  }
+
   @media screen and (min-width: 768px) {
-    font-size: 30px;
+    font-size: 28px;
   }
 `;
 
@@ -329,7 +333,7 @@ export const Autora = styled.section`
       span {
         display: block;
         padding: 3px 7px;
-        background-color: ${({ theme }) => theme.lightBlue};
+        background-color: ${({ theme }) => theme.pink};
         color: ${({ theme }) => theme.blue};
         font-size: 18px;
         width: 155px;
@@ -660,10 +664,10 @@ export const Price = styled.section`
   }
 
   h2 {
-    color: ${({ theme }) => theme.lightBlue};
+    color: ${({ theme }) => theme.pink};
     span {
       color: ${({ theme }) => theme.blue};
-      background: ${({ theme }) => theme.lightBlue};
+      background: ${({ theme }) => theme.pink};
     }
   }
 
@@ -694,12 +698,12 @@ export const Valor = styled.div`
 
   .bonus {
     display: block;
-    text-align: center;
+    text-align: left;
     margin: 10px 0;
   }
 
   p {
-    color: ${({ theme }) => theme.lightBlue};
+    color: ${({ theme }) => theme.pink};
     font-size: 22px;
     text-transform: uppercase;
     margin: 0;
@@ -994,7 +998,7 @@ export const Formulario = styled.div`
       cursor: pointer;
       &:disabled {
         color: ${({ theme }) => theme.blue};
-        background: ${({ theme }) => theme.lightBlue};
+        background: ${({ theme }) => theme.pink};
         cursor: not-allowed;
         &:after {
           color: ${({ theme }) => theme.white};
